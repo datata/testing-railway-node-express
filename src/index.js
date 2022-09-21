@@ -7,14 +7,14 @@ const PORT = process.env.PORT || 3000;
 app.get('/', (req, res)=> {
     return res.json({
         success: true,
-        messaga: "Testing deploy railway."
+        message: "Testing deploy railway."
     })
 });
 
 app.get('/api/railway-tests', (req, res)=> {
     return res.json({
         success: true,
-        messaga: "This is a test."
+        message: "This is a test."
     })
 });
 
