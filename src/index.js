@@ -1,4 +1,5 @@
 const express = require ("express");
+const taskRoutes = require('./v1/routes/taskRoutes.js');
 
 const app = express();
 
@@ -18,6 +19,6 @@ app.get('/api/railway-tests', (req, res)=> {
     })
 });
 
-
+app.use('/api', taskRoutes);
 
 app.listen(PORT, () => console.log("Server is running:" + PORT));
